@@ -10,11 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Sample.Application.Service;
-using Sample.Infrastructure.Interfaces.Extensions;
-using Smaple.Application.ISevice;
 
-namespace Webunitofwork
+namespace Test
 {
     public class Startup
     {
@@ -29,8 +26,6 @@ namespace Webunitofwork
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMyContext();
-            services.AddScoped<IStudentSevice, StudentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

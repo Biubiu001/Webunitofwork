@@ -12,7 +12,7 @@ namespace Sample.Infrastructure.Interfaces.Extensions
     public static class ServiceCollectionEXtensions
     {
 
-        public static IServiceCollection AddMyContext(this IServiceCollection services, string ConncetionName)
+        public static IServiceCollection AddMyContext(this IServiceCollection services, string ConncetionName= "DbConnectionString")
         {
             var configuration = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
             services.AddDbContext<SDbContext>(opts =>

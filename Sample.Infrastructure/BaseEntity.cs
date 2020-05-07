@@ -8,7 +8,7 @@ namespace Sample.Infrastructure.Interfaces
 {
   public  class BaseEntity
     {
-        [Key, Column("VarChar(40)")]
+        [Key, Column(TypeName ="VarChar(40)")]
         public Guid Id { get; set; }
     }
 }

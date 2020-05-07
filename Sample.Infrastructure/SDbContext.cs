@@ -15,7 +15,7 @@ namespace Sample.Infrastructure.Interfaces
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
-
+            base.OnModelCreating(builder);
             var Types = Assembly.Load("Sample.Domain").GetTypes().Where(t => typeof(BaseEntity).IsAssignableFrom(t) && !t.IsAbstract);
             foreach (var type in Types)
             {

@@ -8,9 +8,9 @@ namespace Sample.Infrastructure.Interfaces.Extensions
 {
    public static  class BasicServiceExensions
     {
-        public static IServiceCollection AddBasicService(this IServiceCollection services) {
+        //public static IServiceCollection AddBasicService(this IServiceCollection services) {
 
-         var configuration= services.BuildServiceProvider().GetService<IConfiguration>();        
-        }
+        ///// var configuration= services.BuildServiceProvider().GetService<IConfiguration>();        
+        //}
     }
 }

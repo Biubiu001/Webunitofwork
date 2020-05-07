@@ -10,13 +10,13 @@ namespace Sample.Domain.Domain
     [Table("T_student")]
    public class Student:BaseEntity
     {
-        [Column("Varchar(20)"),Description("学生姓名")]
+        [Column(TypeName = "Varchar(20)"),Description("学生姓名")]
         public string  StudentName { get; set; }
 
-        [Column("DateTime"), Description("创建时间")]
+        [Column(TypeName = "DateTime"), Description("创建时间")]
         public DateTime Creattime { get; set; }
 
-        [Column("varchar(255)"),Description("家庭地址")]
+        [Column(TypeName = "varchar(255)"),Description("家庭地址")]
         public string  Address { get; set; }
     }
 }

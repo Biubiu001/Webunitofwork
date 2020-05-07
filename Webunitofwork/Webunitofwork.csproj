@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Sample.Application.Service\Sample.Application.Service.csproj" />
     <ProjectReference Include="..\Sample.Infrastructure\Sample.Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\Smaple.Application.ISevice\Smaple.Application.ISevice.csproj" />
   </ItemGroup>
 
 

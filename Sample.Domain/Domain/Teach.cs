@@ -10,13 +10,13 @@ namespace Sample.Domain.Domain
     [Table("T_teach")]
     public class Teach : BaseEntity
     {
-        [Column("Varchar(255)"), Description("姓名")]
+        [Column(TypeName = "Varchar(255)"), Description("姓名")]
         public string Name { get; set; }
 
-        [Column("DateTime"), Description("创建时间")]
+        [Column(TypeName = "DateTime"), Description("创建时间")]
         public DateTime Creattime { get; set; }
 
-        [DefaultValue(false), Description("创建时间")]
+        [DefaultValue(false), Description("课程")]
         public bool Curricula { get; set; }
 
     }
